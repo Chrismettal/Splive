@@ -8,7 +8,7 @@ _gitignored/*
 # Markdown notes that are usually linked here
 Notebook.md
 
-# Python virtual environment
+# Python virtual environments
 .venv/
 .splicev/
 
