@@ -1,8 +1,10 @@
 # SpliceV <!-- omit in toc -->
 
-![Logo](img/Logo.png)
-
 This is a work in progress.
+
+Currently this script will read in multiple CSV files in alphabetical order and line by line write them into one spliced file, ommitting the header for all files but the first one. Useful for splicing logfiles from several days into one file.
+
+Will get significant updates for interactive splicing etc.
 
 If you like my work please consider supporting my caffeine addiction!
 
