@@ -139,7 +139,7 @@ def splice_files(file_path_list, output_file):
 #############################################################################
 def main():
     print("--------------------")
-    print("--Starting SpliceV--")
+    print("--Starting  Splive--")
     print("--------------------")
 
     # Set command line arguments
