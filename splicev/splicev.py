@@ -22,7 +22,7 @@ import argparse
 ##                             main()                                   ##
 ##########################################################################
 def main():
-    print("One smart fellow he smelled fart DAMMIT")
+    print("One smart fellow he smelled fart NICE")
 
 ##########################################################################
 ##                        main() idiom                                  ##
