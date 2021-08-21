@@ -7,6 +7,6 @@ pypi_release:
   script:
     - pip install -U twine build
     - python -m build
-    - TWINE_PASSWORD=$TWINE_TOKEN TWINE_USERNAME=__token__ twine upload  dist/*
+    - TWINE_PASSWORD="$TWINE_TOKEN" TWINE_USERNAME=__token__ twine upload  dist/*
   only:
     - tags
