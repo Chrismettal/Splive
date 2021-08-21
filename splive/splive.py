@@ -1,5 +1,5 @@
 #############################################################################
-##                               SpliceV                                   ##
+##                               Splive                                    ##
 #############################################################################
 # Command line tool to append several csv files together into one large file.
 # Mainly used to concat several daily logfiles into one for better 
