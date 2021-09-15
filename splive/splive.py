@@ -105,7 +105,8 @@ def splice_files(file_path_list, output_file):
 
             # if line is empty
             if not line:
-                sys.exit(1)
+                print("Found empty header in first found file, exiting")
+                sys.exit()
 
             outfile.write(line)
 
@@ -153,7 +154,7 @@ def main():
 
     # Check if files were found
     if not file_path_list:
-        print("No valid files found at input_path")
+        print("No valid files found at input_path, exiting")
         sys.exit()
 
     # Output file list
