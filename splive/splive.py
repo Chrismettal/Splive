@@ -162,7 +162,7 @@ def main():
     # Output file list
     print("Found the following files: ")
     for file in file_path_list:
-        if file == inputFile:
+        if file == output_file:
             fileList.remove(file)
         else:
             print(file)
