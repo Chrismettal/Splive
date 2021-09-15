@@ -162,10 +162,16 @@ def main():
     # Output file list
     print("Found the following files: ")
     for file in file_path_list:
+        print(file)
+
+    # Sanitize file list
+    for file in file_path_list:
         if file == output_file:
             file_path_list.remove(file)
-            print("Ignored output file:")
 
+    # Output file list after sanitizing
+    print("File list after sanitizing: ")
+    for file in file_path_list:
         print(file)
 
     print("---")
