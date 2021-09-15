@@ -162,7 +162,10 @@ def main():
     # Output file list
     print("Found the following files: ")
     for file in file_path_list:
-        print(file)
+        if file == inputFile:
+            fileList.remove(file)
+        else:
+            print(file)
     print("---")
 
     # Create spliced file
