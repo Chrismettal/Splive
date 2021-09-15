@@ -6,8 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.3]
   
+## Changed
+- More verbose output during file list sanitation and exit codes.
+
 ### Fixed
-- Removed Linux specific code, should work better on Windows systems
+- Removed Linux specific code. Now working better with Windows file path seperators.
 
 
 ## [0.0.2]
