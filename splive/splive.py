@@ -164,10 +164,10 @@ def main():
     for file in file_path_list:
         if file == output_file:
             file_path_list.remove(file)
-            pring("Ignored output file:")
+            print("Ignored output file:")
 
         print(file)
-        
+
     print("---")
 
     # Create spliced file
