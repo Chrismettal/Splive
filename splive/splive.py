@@ -169,6 +169,8 @@ def main():
         if file == output_file:
             file_path_list.remove(file)
 
+    print("---")
+    
     # Output file list after sanitizing
     print("File list after sanitizing: ")
     for file in file_path_list:
