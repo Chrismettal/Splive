@@ -130,6 +130,8 @@ def splice_files(file_path_list, output_file):
                             outfile.write(line)
 
                         count += 1
+            else:
+                print("skipping output file")
 
         print("All files spliced")
         print("---")
