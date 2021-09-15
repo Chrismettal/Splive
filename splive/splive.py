@@ -50,7 +50,7 @@ def argset():
 
     # Output path
     parser.add_argument('output_file', nargs='?', 
-        default=os.getcwd()+"/Spliced.csv", 
+        default=os.getcwd()+ os.path.sep + "Spliced.csv", 
         help="""
             Path and filename of output CSV. Will use 
             <CurrentDirectory>/Spliced.csv as default
@@ -74,21 +74,21 @@ def argset():
     # Argument sanity checks
     if not os.path.isdir(input_path):
         print("The input path specified does not exist, exiting")
-        sys.exit(os.EX_USAGE)
+        sys.exit()
     if not os.path.isdir(output_path):
         print("The output path specified does not exist, exiting")
-        sys.exit(os.EX_USAGE)
+        sys.exit()
     if not ".csv" in output_file:
         print("Please specify a file path for output_file instead of a directory")
         print("Hint: my/output/path/spliced.csv, not my/output/path")
-        sys.exit(os.EX_USAGE)
+        sys.exit()
 
 
 def read_file_list(input_path):
     """
     Read in files from input_path 
     """
-    file_path_list = glob.glob(input_path + "/*.csv")
+    file_path_list = glob.glob(input_path + os.path.sep + "*.csv")
 
     return(file_path_list)
 
@@ -154,7 +154,7 @@ def main():
     # Check if files were found
     if not file_path_list:
         print("No valid files found at input_path")
-        sys.exit(os.EX_USAGE)
+        sys.exit()
 
     # Output file list
     print("Found the following files: ")
