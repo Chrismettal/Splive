@@ -10,4 +10,4 @@ Currently this script will read in multiple CSV files in alphabetical order and 
 
 Will get significant updates for interactive splicing etc.
 
-**If you like my work please consider [supporting my caffeine addiction](https://github.com/Chrismettal#donations)!**
+**If you like my work please consider [supporting me](https://github.com/Chrismettal#donations)!**
